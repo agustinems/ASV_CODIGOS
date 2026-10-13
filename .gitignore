@@ -1,0 +1,8 @@
+**/.pio/
+**/node_modules/
+**/.next/
+**/.vinext/
+**/dist-spa/
+**/.env*
+**/*.tsbuildinfo
+.DS_Store

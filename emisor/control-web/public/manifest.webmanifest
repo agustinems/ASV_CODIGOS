@@ -1,0 +1,18 @@
+{
+  "name": "ASV Control · LoRa",
+  "short_name": "ASV Control",
+  "description": "Control y telemetría en tiempo real para vehículo de superficie autónomo.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#061016",
+  "theme_color": "#061016",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
