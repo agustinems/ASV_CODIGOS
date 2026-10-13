@@ -25,7 +25,7 @@ constexpr int LORA_DIO0 = 26;
 constexpr long LORA_FREQUENCY = 433E6;
 constexpr uint8_t LORA_SYNC_WORD = 0x12;
 
-constexpr uint32_t LORA_INTERVAL_MS = 300;
+constexpr uint32_t LORA_INTERVAL_MS = 150;
 constexpr uint32_t COMMAND_TIMEOUT_MS = 750;
 constexpr int MOTOR_NEUTRAL = 2048;
 

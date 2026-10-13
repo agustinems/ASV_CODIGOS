@@ -2,7 +2,7 @@
 
 Firmware: [`esp32_lora_local/esp32_lora_local.ino`](esp32_lora_local/esp32_lora_local.ino).
 
-Crea la red WiFi **ASV-San-Roque**, contraseña **SR-7F3C-92A6-4B1D**. Conectarse a esa red y abrir **http://192.168.4.1/**. El servidor HTTP usa el puerto 80 y el WebSocket el 81. Recibe los controles de la página y los transmite por LoRa cada 300 ms; el control inicia desarmado. No acciona motores directamente.
+Crea la red WiFi **ASV-San-Roque**, contraseña **SR-7F3C-92A6-4B1D**. Conectarse a esa red y abrir **http://192.168.4.1/**. El servidor HTTP usa el puerto 80 y el WebSocket el 81. Recibe los controles de la página y los transmite por LoRa cada 150 ms; el control inicia desarmado. No acciona motores directamente.
 
 ## Compilar y cargar
 
