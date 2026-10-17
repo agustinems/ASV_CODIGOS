@@ -29,3 +29,9 @@ python3 -m platformio run -e emisor -t uploadfs --upload-port PUERTO_USB
 ```
 
 El emisor envía neutro si pierde los comandos de la página durante más de 750 ms. La red local no tiene salida a Internet.
+
+## Arduino IDE y particiones
+
+Mantener `esp32_lora_local/partitions.csv` junto al `.ino`. Usa la misma distribucion que Arduino ESP32 Default 4 MB y PlatformIO: LittleFS en `0x290000`, tamano `0x160000`. Se corrigio la diferencia con la tabla anterior, que grababa LittleFS en `0x210000` y causaba "Archivo no encontrado" al alternar entre ambos entornos.
+
+Con placas que usaron la tabla anterior, volver a cargar los archivos web una vez con `uploadfs`. Cargar solo el `.ino` no carga la pagina; tampoco activar borrado completo de flash al actualizar solo el programa si se quieren conservar los archivos web. La velocidad de carga se fija en 115200 para evitar los errores de comunicacion observados.

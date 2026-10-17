@@ -27,7 +27,7 @@ function totalBytes(directory) {
 
 const bytes = totalBytes(output);
 console.log(`Página para ESP32: ${(bytes / 1024).toFixed(0)} KiB`);
-if (bytes > 1_700_000) {
+if (bytes > 1_250_000) {
   console.error('La página supera el espacio seguro de la partición LittleFS.');
   process.exit(1);
 }
